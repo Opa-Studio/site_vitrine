@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPA Studio</title>
+    <!-- Utilisation de Tailwind CSS via CDN pour un design moderne et rapide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Personnalisé pour les animations et ajustements fins */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            color: #0a0a0a;
+        }
+        
+        /* Animation de flottaison pour la mascotte */
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Effet de soulignement élégant au survol des liens */
+        .border-b-hover::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #0a0a0a;
+            transition: width .3s ease;
+            margin-top: 4px;
+        }
+
+        .border-b-hover:hover::after {
+            width: 100%;
+        }
+
+        /* Section sombre inversée */
+        .inverted-section {
+            background-color: #050505;
+            color: #fcfcfc;
+        }
+        
+        .inverted-section .border-b-hover::after {
+            background: #fcfcfc;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <!-- CONTENEUR NAVBAR (Largeur limitée, centrée) -->
+    <div class="max-w-6xl mx-auto px-6 py-8">
+        <nav class="flex items-center justify-between">
+            
+            <!-- Logo du Studio -->
+            <!-- Remplacez le bloc SVG par votre propre balise img, ex: <img src="logo.png" alt="Logo" class="h-10"> -->
+            <a href="#" class="flex items-center gap-4 z-10 group">
+                <img src="assets/img/opa2.png" alt="Logo du Studio" class="h-20 w-100 object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <!-- Liens de navigation (Desktop) -->
+            <div class="hidden md:flex items-center gap-10 font-semibold text-sm tracking-widest uppercase text-gray-900">
+                <a href="index.html" class="border-b-hover">Accueil</a>
+                <a href="" class="border-b-hover">Nos Jeux</a>
+                <a href="" class="border-b-hover">Le Studio</a>
+                <a href="contact.html" class="border-b-hover">Contact</a>
+            </div>
+
+            <!-- Bouton Menu Mobile (Caché sur Desktop) -->
+            <button class="md:hidden block text-black">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+    <!-- SECTION HERO -->
+    <main class="max-w-6xl mx-auto px-6 pt-10 pb-24 md:py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+        
+        <!-- Texte et Call-to-actions -->
+        <div class="flex-1 space-y-8 text-center md:text-left z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1]">
+                L'art du jeu.<br>
+                <span class="text-gray-400">Le jeu de l'art.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-500 max-w-lg mx-auto md:mx-0 leading-relaxed font-light">
+                Nous sommes un studio indépendant créant des expériences interactives uniques, où le design minimaliste rencontre un gameplay exigeant.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
+                <a href="#jeux" class="px-8 py-4 bg-black text-white font-semibold rounded-full hover:bg-gray-800 transition-colors duration-300 w-full sm:w-auto text-center shadow-lg hover:shadow-xl">
+                    Découvrir nos jeux
+                </a>
+                <a href="#philosophie" class="px-8 py-4 bg-transparent text-black border-2 border-black font-semibold rounded-full hover:bg-black hover:text-white transition-all duration-300 w-full sm:w-auto text-center">
+                    Notre philosophie
+                </a>
+            </div>
+        </div>
+
+        <!-- Mascotte -->
+        <div class="flex-1 flex justify-center items-center relative w-full">
+            <!-- Cercle décoratif en arrière-plan pour faire ressortir la mascotte -->
+            <div class="absolute w-64 h-64 md:w-[450px] md:h-[450px] bg-gray-100 rounded-full mix-blend-multiply blur-3xl opacity-60"></div>
+            
+            <!-- VOTRE IMAGE (Mascotte) intégrée ici -->
+            <img src="assets/img/OPO.png" alt="Mascotte du Studio" class="relative w-full max-w-md object-contain floating drop-shadow-2xl">
+        </div>
+    </main>
+
+    <!-- SECTION JEUX (Design inversé pour contraster) -->
+    <section id="jeux" class="inverted-section py-24 mt-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16 border-b border-neutral-800 pb-6">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Nos Créations</h2>
+                <a href="#" class="hidden md:block text-sm uppercase tracking-widest border-b-hover text-gray-400 hover:text-white transition-colors">Voir le catalogue</a>
+            </div>
+            
+            <!-- Grille de projets (Mockups) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Jeu 1 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full aspect-[4/3] bg-neutral-900 rounded-xl overflow-hidden relative border border-neutral-800 group-hover:border-neutral-600 transition-colors duration-500">
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-neutral-700 group-hover:text-white transition-colors duration-500">
+                            <span class="font-bold text-xl tracking-[0.3em] uppercase">Projet 01</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold tracking-tight">L'Encre Noire</h3>
+                            <p class="text-gray-500 mt-1">Aventure / Puzzle</p>
+                        </div>
+                        <span class="text-xs uppercase tracking-widest px-3 py-1 border border-neutral-700 rounded-full">2026</span>
+                    </div>
+                </div>
+
+                <!-- Jeu 2 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full aspect-[4/3] bg-neutral-900 rounded-xl overflow-hidden relative border border-neutral-800 group-hover:border-neutral-600 transition-colors duration-500">
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-neutral-700 group-hover:text-white transition-colors duration-500">
+                            <span class="font-bold text-xl tracking-[0.3em] uppercase">Projet 02</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold tracking-tight">Le Vide</h3>
+                            <p class="text-gray-500 mt-1">Plateforme 2D</p>
+                        </div>
+                        <span class="text-xs uppercase tracking-widest px-3 py-1 border border-neutral-700 rounded-full">Bientôt</span>
+                    </div>
+                </div>
+
+                <!-- Jeu 3 -->
+                <div class="group cursor-pointer hidden lg:block">
+                    <div class="w-full aspect-[4/3] bg-neutral-900 rounded-xl overflow-hidden relative border border-neutral-800 group-hover:border-neutral-600 transition-colors duration-500">
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-neutral-700 group-hover:text-white transition-colors duration-500">
+                            <span class="font-bold text-xl tracking-[0.3em] uppercase">Projet 03</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold tracking-tight">Concept A</h3>
+                            <p class="text-gray-500 mt-1">Prototype</p>
+                        </div>
+                        <span class="text-xs uppercase tracking-widest px-3 py-1 border border-neutral-700 rounded-full">En dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER MINIMALISTE -->
+    <footer class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <span class="font-bold tracking-[0.2em] text-sm uppercase text-black">OPA Studio © 2026</span>
+            </div>
+            
+            <div class="flex gap-6">
+                <!-- Icône Twitter/X -->
+                <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <!-- Icône Instagram -->
+                <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
