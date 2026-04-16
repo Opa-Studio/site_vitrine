@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPA Studio - Le Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="antialiased selection:bg-black selection:text-white contact-page">
+
+    <div class="max-w-6xl mx-auto px-6 py-8 w-full">
+        <nav class="flex items-center justify-between flex-wrap relative z-50">
+            <a href="index.html" class="flex items-center gap-4 z-10 group">
+                <img src="assets/img/opa2.png" alt="Logo du Studio" class="h-40 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <div class="hidden md:flex items-center gap-10 font-semibold text-sm tracking-widest uppercase text-gray-900">
+                <a href="index.html" class="border-b-hover">Accueil</a>
+                <a href="jeux.html" class="border-b-hover">Nos Jeux</a>
+                <a href="studio.html" class="active-link">Le Studio</a>
+                <a href="contact.html" class="border-b-hover">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden block text-black focus:outline-none relative z-50">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <div id="mobile-menu" class="hidden absolute top-full left-0 right-0 mt-4 bg-white/95 backdrop-blur-xl shadow-2xl rounded-3xl py-10 md:hidden flex-col items-center gap-8 border border-neutral-100 font-bold text-lg tracking-[0.2em] uppercase text-gray-900 z-40">
+                <a href="index.html" class="mobile-link hover:text-gray-500 transition-colors">Accueil</a>
+                <a href="jeux.html" class="mobile-link hover:text-gray-500 transition-colors">Nos Jeux</a>
+                <a href="studio.html" class="mobile-link hover:text-gray-500 transition-colors">Le Studio</a>
+                <a href="contact.html" class="mobile-link hover:text-gray-500 transition-colors">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="flex-grow py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="space-y-24">
+                <section class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-8">
+                        Nous créons des mondes<br><span class="text-gray-400">où chaque détail compte.</span>
+                    </h1>
+                    <p class="text-gray-500 text-lg font-light leading-relaxed max-w-2xl mx-auto">
+                        OPA Studio est un studio de jeu vidéo indépendant basé à Montpellier, fondé sur la conviction que les expériences interactives les plus mémorables naissent de l'alliance entre minimalisme visuel et profondeur de gameplay.
+                    </p>
+                </section>
+
+                <section class="inverted-section py-16 px-8 rounded-3xl">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">Notre Philosophie</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 border border-neutral-700 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Esthétique Essentielle</h3>
+                                <p class="text-gray-400 font-light">Chaque pixel a une raison d'être. Nous cherchons l'équilibre parfait entre forme et fonction.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 border border-neutral-700 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Gameplay Profond</h3>
+                                <p class="text-gray-400 font-light">La simplicité apparente_cache une richesse mécanique destinée aux joueurs engagés.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="w-12 h-12 border border-neutral-700 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.682l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Emotion Vraie</h3>
+                                <p class="text-gray-400 font-light">Nous voulons créer des expériences qui résonnent longtemps après que le joueur ait posé la manette.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-16 px-8">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">Notre Mission</h2>
+                        <p class="text-gray-500 text-lg font-light leading-relaxed max-w-3xl mx-auto text-center mb-12">
+                            Le choix de créer Opa Studio se justifie par la volonté de fonder un studio de développement indépendant, agile.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-10 h-10 bg-black text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-2">Un marché concurrentiel</h3>
+                                        <p class="text-gray-500 font-light">Le marché des Serious Games est bien établi avec des acteurs existants, mais souvent sur des plateformes vieillissantes ou rigides.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-10 h-10 bg-black text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-2">Solutions modernes</h3>
+                                        <p class="text-gray-500 font-light">Nous nous différencions en proposant des outils actuels, accessibles sur le Web, sans installation requise.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <div class="w-10 h-10 bg-black text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-2">Architecture modulaire</h3>
+                                        <p class="text-gray-500 font-light">Notre système de plugins permet une personnalisation complète, répondant parfaitement aux besoins spécifiques des établissements éducatifs et des formateurs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-neutral-100 rounded-3xl p-8 aspect-square flex items-center justify-center">
+                                <div class="text-center space-y-4">
+                                    <div class="w-20 h-20 mx-auto bg-black rounded-2xl flex items-center justify-center">
+                                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    </div>
+                                    <p class="text-2xl font-bold">Serious Games</p>
+                                    <p class="text-gray-500 font-light text-sm">Jeux éducatifs et de simulation<br>sur mesure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="inverted-section py-16 px-8 rounded-3xl">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-8">Technologies & Partenaires</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                            <div class="space-y-6">
+                                <h3 class="text-xl font-bold">Notre Stack</h3>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Symfony</span>
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">PHP</span>
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">MySQL</span>
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Docker</span>
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">JavaScript</span>
+                                    <span class="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Tailwind CSS</span>
+                                </div>
+                                <p class="text-gray-400 font-light text-sm">
+                                    Nous privilégions des technologies modernes, robustes et éprouvées pour garantir des applications performantes et maintenables.
+                                </p>
+                            </div>
+                            <div class="space-y-6">
+                                <h3 class="text-xl font-bold">Partenaires</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                                        </div>
+                                        <span class="text-gray-300 font-light">Établissements scolaires</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                                        </div>
+                                        <span class="text-gray-300 font-light">Enseignants et formateurs</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                                        </div>
+                                        <span class="text-gray-300 font-light">Réseau académique</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-12">L'Équipe</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <a href="https://github.com/harutsukiGo" target="_blank" rel="noopener noreferrer">
+                                <img src="https://avatars.githubusercontent.com/u/168865973?v=4" alt="Manu Andriamihaja" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover hover:opacity-80 transition-opacity">
+                            </a>
+                            <h3 class="text-lg font-bold">Manu Andriamihaja</h3>
+                            <p class="text-gray-500 text-sm">@harutsukiGo</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="https://github.com/ju-grc" target="_blank" rel="noopener noreferrer">
+                                <img src="https://avatars.githubusercontent.com/u/122916697?v=4" alt="Julien Garcia" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover hover:opacity-80 transition-opacity">
+                            </a>
+                            <h3 class="text-lg font-bold">Julien Garcia</h3>
+                            <p class="text-gray-500 text-sm">@ju-grc</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="https://github.com/Raphlbrt" target="_blank" rel="noopener noreferrer">
+                                <img src="https://avatars.githubusercontent.com/u/115616227?v=4" alt="Raphael Lambert" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover hover:opacity-80 transition-opacity">
+                            </a>
+                            <h3 class="text-lg font-bold">Raphael Lambert</h3>
+                            <p class="text-gray-500 text-sm">@Raphlbrt</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="https://github.com/Yota02" target="_blank" rel="noopener noreferrer">
+                                <img src="https://avatars.githubusercontent.com/u/122354277?v=4" alt="Alexis Michaux-Kinet" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover hover:opacity-80 transition-opacity">
+                            </a>
+                            <h3 class="text-lg font-bold">Alexis Michaux-Kinet</h3>
+                            <p class="text-gray-500 text-sm">@Yota02</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="inverted-section py-16 px-8 rounded-3xl text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Rejoignez-nous</h2>
+                    <p class="text-gray-400 max-w-xl mx-auto mb-8 font-light">
+                        Nous sommes toujours à la recherche de collaborators partageant notre vision. Si vous croyez en des expériences ludiques significatives, parlons-en.
+                    </p>
+                    <a href="contact.html" class="inline-block px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-200 transition-colors duration-300">
+                        Nous contacter
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-white border-t border-neutral-100">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <span class="font-bold tracking-[0.2em] text-sm uppercase text-black">OPA Studio © 2026</span>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

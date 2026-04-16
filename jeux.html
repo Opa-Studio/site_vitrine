@@ -1,9 +1,9 @@
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPA Studio - Contact</title>
+    <title>OPA Studio - Nos Jeux</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -12,16 +12,15 @@
 
     <div class="max-w-6xl mx-auto px-6 py-8 w-full">
         <nav class="flex items-center justify-between flex-wrap relative z-50">
-            
             <a href="index.html" class="flex items-center gap-4 z-10 group">
                 <img src="assets/img/opa2.png" alt="Logo du Studio" class="h-40 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             <div class="hidden md:flex items-center gap-10 font-semibold text-sm tracking-widest uppercase text-gray-900">
                 <a href="index.html" class="border-b-hover">Accueil</a>
-                <a href="jeux.html" class="border-b-hover">Nos Jeux</a>
+                <a href="jeux.html" class="active-link">Nos Jeux</a>
                 <a href="studio.html" class="border-b-hover">Le Studio</a>
-                <a href="contact.html" class="active-link">Contact</a>
+                <a href="contact.html" class="border-b-hover">Contact</a>
             </div>
 
             <button id="mobile-menu-btn" class="md:hidden block text-black focus:outline-none relative z-50">
@@ -39,57 +38,60 @@
         </nav>
     </div>
 
-    <main class="flex-grow flex items-center py-12 md:py-20">
-        <div class="max-w-6xl mx-auto px-6 w-full">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="flex-1 space-y-8 w-full">
-                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1]">
-                        Parlons de<br>votre prochain<br><span class="text-gray-400">jeu préféré.</span>
+    <main class="flex-grow py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="space-y-24">
+                <section class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-8">
+                        Nos Jeux
                     </h1>
-                    <p class="text-gray-500 max-w-sm text-lg font-light leading-relaxed">
-                        Que ce soit pour une opportunité d'édition, une question sur nos jeux ou simplement pour dire bonjour, n'hésitez pas à nous écrire.
+                    <p class="text-gray-500 text-lg font-light leading-relaxed max-w-2xl mx-auto">
+                        Découvrez nos projets de Serious Games, conçus pour allier apprentissage et entertainment.
                     </p>
-                    <div class="space-y-6 pt-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-black">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </section>
+
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="capitalwars.html" class="group">
+                        <div class="bg-neutral-100 rounded-3xl overflow-hidden transition-transform duration-300 group-hover:scale-[1.02]">
+                            <div class="bg-gradient-to-br from-gray-200 to-gray-300 aspect-video flex items-center justify-center">
+                                <div class="w-20 h-20 bg-black rounded-2xl flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
                             </div>
-                            <span class="font-medium text-lg">contact@opa-studio.com</span>
+                            <div class="p-6">
+                                <div class="inline-block px-3 py-1 bg-black text-white text-xs font-bold uppercase tracking-wider rounded-full mb-3 w-fit">
+                                    En production
+                                </div>
+                                <h2 class="text-xl font-bold mb-2 group-hover:underline">Capital-Wars</h2>
+                                <p class="text-gray-500 font-light text-sm">Simulation de gestion d'entreprise</p>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="px-2 py-1 bg-neutral-200 rounded text-xs">Finance</span>
+                                    <span class="px-2 py-1 bg-neutral-200 rounded text-xs">Stratégie</span>
+                                    <span class="px-2 py-1 bg-neutral-200 rounded text-xs">Web</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center text-black">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </a>
+
+                    <div class="bg-neutral-100 rounded-3xl overflow-hidden opacity-60">
+                        <div class="bg-gradient-to-br from-gray-200 to-gray-300 aspect-video flex items-center justify-center">
+                            <div class="w-20 h-20 bg-neutral-300 rounded-2xl flex items-center justify-center">
+                                <svg class="w-10 h-10 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
                             </div>
-                            <span class="font-medium text-lg">Montpellier, France</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="inline-block px-3 py-1 bg-neutral-300 text-neutral-600 text-xs font-bold uppercase tracking-wider rounded-full mb-3 w-fit">
+                                À venir
+                            </div>
+                            <h2 class="text-xl font-bold mb-2">Prochain projet</h2>
+                            <p class="text-gray-500 font-light text-sm"> quelque chose de nouveau...</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="flex-1 bg-white p-8 md:p-10 rounded-3xl border border-neutral-200 shadow-xl w-full">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div class="space-y-2">
-                                <label for="name" class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Nom</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black focus:bg-white transition-all" placeholder="Votre nom">
-                            </div>
-                            <div class="space-y-2">
-                                <label for="email" class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black focus:bg-white transition-all" placeholder="nom@exemple.com">
-                            </div>
-                        </div>
-                        <div class="space-y-2">
-                            <label for="subject" class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Sujet</label>
-                            <input type="text" id="subject" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black focus:bg-white transition-all" placeholder="De quoi souhaitez-vous parler ?">
-                        </div>
-                        <div class="space-y-2">
-                            <label for="message" class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-black focus:bg-white transition-all resize-none" placeholder="Votre message ici..."></textarea>
-                        </div>
-                        <button type="button" class="w-full py-4 bg-black text-white font-bold tracking-widest uppercase rounded-xl hover:bg-gray-800 transition-all duration-300 hover:shadow-lg mt-2">
-                            Envoyer le message
-                        </button>
-                    </form>
-                </div>
+                </section>
             </div>
         </div>
     </main>
